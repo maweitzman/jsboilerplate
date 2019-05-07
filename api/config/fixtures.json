@@ -1,0 +1,29 @@
+[
+    {
+        "model": "User",
+        "data": {
+            "id": 1,
+            "firstName": "Super",
+            "lastName": "User",
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "$2b$10$jS01ryAqE4IeASoarp/u0Ow1fNiOCI6SMV/9OMlvC4u7XlBE6sCvi"
+        }
+    },
+    {
+        "model": "Role",
+        "data": {
+            "id": 1,
+            "name": "Admin",
+            "Users": [1]
+        }
+    },
+    {
+        "model": "Role",
+        "data": {
+            "id": 2,
+            "name": "User",
+            "Users": [1]
+        }
+    }
+]
