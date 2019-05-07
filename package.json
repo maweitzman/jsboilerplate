@@ -1,7 +1,7 @@
 {
     "name": "jsboilerplate",
     "version": "1.0.0",
-    "description": "",
+    "description": "full-stack javascript application boilerplate (with ssr)",
     "main": "api/config/scripts/start.js",
     "scripts": {
         "start": "nodemon start.js"
