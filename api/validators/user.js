@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import Joi from '@hapi/joi';
 
 const UserValidator = Joi.object().keys({
     firstName: Joi.string().required(),

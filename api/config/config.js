@@ -1,7 +1,7 @@
 const development = {
     api_url: 'http://localhost:5000/api',
     database: {
-        name: 'jsboilerplate',
+        name: process.env.DATABASE,
         username: process.env.USERNAME,
         password: process.env.PASSWORD,
         host: process.env.HOST,
