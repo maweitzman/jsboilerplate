@@ -5,7 +5,6 @@ import config from '../../../api/config/config';
 import 'isomorphic-unfetch';
 
 import {Col, Row} from 'reactstrap';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class AllPumps extends React.Component {
     constructor(props) {
@@ -88,13 +87,15 @@ class AllPumps extends React.Component {
                                         >
                                             <span
                                                 style={{
-                                                    'cursor': 'pointer'
+                                                    'cursor': 'pointer',
+                                                    'color': '#a71e32',
+                                                    'font-weight': 'bold'
                                                 }}
                                                 onClick={() => {
                                                     this.delete(pump.id);
                                                 }}
                                             >
-                                                <FontAwesomeIcon icon="minus-square" color="#a71e32"/>
+                                                Delete
                                             </span>
                                         </td>
                                         <td>{pump.name}</td>
@@ -106,10 +107,12 @@ class AllPumps extends React.Component {
                                             <Link href={'/pumps/edit?id=' + pump.id} as={'/pumps/' + pump.id + '/edit'} prefetch>
                                                 <span
                                                     style={{
-                                                        'cursor': 'pointer'
+                                                        'cursor': 'pointer',
+                                                        'color': '#007bff',
+                                                        'font-weight': 'bold'
                                                     }}
                                                 >
-                                                    <FontAwesomeIcon icon="pen-square" color="#007bff"/>
+                                                    Edit
                                                 </span>
                                             </Link>
                                         </td>
