@@ -6,7 +6,7 @@ import config from '../../../api/config/config';
 import 'isomorphic-unfetch';
 
 import UserValidator from '../../validators/user';
-import UserInterface from '../../interfaces/user';
+import UserViewModel from '../../view_models/user';
 import FormService from '../../services/form';
 
 import BasicInput from '../../components/forms/basicInput';
@@ -102,7 +102,7 @@ class NewUser extends React.Component {
                         <fieldset>
                             <legend>Complete the form to create a user.</legend>
                             <Formik
-                                initialValues={new UserInterface()}
+                                initialValues={new UserViewModel()}
                                 validationSchema={UserValidator}
                                 onSubmit={this.post}
                             >

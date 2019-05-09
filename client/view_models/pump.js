@@ -1,7 +1,7 @@
-class PumpInterface {
+class PumpViewModel {
     constructor(name) {
         this.name = name || '';
     }
 }
 
-export default PumpInterface;
+export default PumpViewModel;

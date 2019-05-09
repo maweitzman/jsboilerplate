@@ -1,6 +1,6 @@
 import ApiService from '../services/api';
 import {extendObservable} from 'mobx';
-import PumpInterface from '../interfaces/pump';
+import PumpViewModel from '../view_models/pump';
 
 class PumpApi {
     async post(pump) {
@@ -32,7 +32,7 @@ class PumpStore {
 
         extendObservable(this, {
             pumps: [],
-            pump: new PumpInterface()
+            pump: new PumpViewModel()
         });
     }
 

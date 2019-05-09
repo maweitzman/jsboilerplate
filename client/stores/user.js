@@ -1,6 +1,6 @@
 import ApiService from '../services/api';
 import {extendObservable} from 'mobx';
-import UserInterface from '../interfaces/user';
+import UserViewModel from '../view_models/user';
 
 class UserApi {
     async post(user) {
@@ -41,7 +41,7 @@ class UserStore {
         extendObservable(this, {
             users: [],
             roles: [],
-            user: new UserInterface()
+            user: new UserViewModel()
         });
     }
 

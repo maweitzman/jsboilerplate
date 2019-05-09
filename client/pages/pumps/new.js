@@ -4,7 +4,7 @@ import Router from 'next/router';
 import {inject, observer} from 'mobx-react';
 
 import PumpValidator from '../../validators/pump';
-import PumpInterface from '../../interfaces/pump';
+import PumpViewModel from '../../view_models/pump';
 import FormService from '../../services/form';
 
 import BasicInput from '../../components/forms/basicInput';
@@ -58,7 +58,7 @@ class NewPump extends React.Component {
                         <fieldset>
                             <legend>Complete the form to create a pump.</legend>
                             <Formik
-                                initialValues={new PumpInterface()}
+                                initialValues={new PumpViewModel()}
                                 validationSchema={PumpValidator}
                                 onSubmit={this.post}
                             >

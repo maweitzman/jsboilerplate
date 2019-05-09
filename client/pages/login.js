@@ -3,7 +3,7 @@ import Router from 'next/router';
 import {inject, observer} from 'mobx-react';
 
 import AuthValidator from '../validators/auth';
-import AuthInterface from '../interfaces/auth';
+import AuthViewModel from '../view_models/auth';
 import FormService from '../services/form';
 
 import BasicInput from '../components/forms/basicInput';
@@ -57,7 +57,7 @@ class Login extends React.Component {
                         <fieldset>
                             <legend>Complete the form to login.</legend>
                             <Formik
-                                initialValues={new AuthInterface()}
+                                initialValues={new AuthViewModel()}
                                 validationSchema={AuthValidator}
                                 onSubmit={this.login}
                             >

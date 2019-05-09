@@ -1,4 +1,4 @@
-class UserInterface {
+class UserViewModel {
     constructor(firstName, lastName, email, username, password) {
         this.firstName = firstName || '';
         this.lastName = lastName || '';
@@ -8,4 +8,4 @@ class UserInterface {
     }
 }
 
-export default UserInterface;
+export default UserViewModel;
